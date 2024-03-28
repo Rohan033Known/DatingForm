@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+    
+    <form id="dateForm" action="https://formspree.io/f/mrgnyqzw" method="post">
+        <h2 id="heading">So You want to  ?</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email"> <br><br>
+        <label for="pets">1. Do you have any pets:</label><br>
+        <input type="radio" id="petsYes" name="pets" value="Yes" required>
+        <label for="petsYes">Yes</label><br>
+        <input type="radio" id="petsNo" name="pets" value="No" required>
+        <label for="petsNo">No</label><br>
+        <label for="futurePets">If not, would you want pets in the future:</label><br>
+        <input type="radio" id="futurePetsYes" name="futurePets" value="Yes">
+        <label for="futurePetsYes">Yes</label><br>
+        <input type="radio" id="futurePetsNo" name="futurePets" value="No" required>
+        <label for="futurePetsNo">No</label><br>
+        <label for="food">2. What is your favorite food :</label><br>
+        <input type="text" id="food" name="food"><br>
+        <label for="memory">3. What is your favorite childhood memory :</label><br>
+        <input type="text" id="memory" name="memory"><br>
+        <label for="stress">4. How do you handel stress :</label><br>
+        <input type="text" id="stress" name="stress"><br>
+        <label for="spendTime">5. What do you spend the majority of your time doing:</label><br>
+        <input type="text" id="spendTime" name="spendTime" required><br>
+        <label for="type">6. Which type you are : </label><br>
+        <select id="type" name="type" required>
+            <option value="">Select</option>
+            <option value="innocent">Innocent</option>
+            <option value="Sedutress">Seductress</option>
+            <option value="romantic">Romantic</option>
+            <option value="mysterious"> Mysterious</option>
+            <option value="horny">Horny</option>
+            <option value="nextdoor">Girl next Door</option>
+        </select><br>
+        <label for="outof10">7. Please mark yourself on this line: (?/10)</label><br>
+        <input type="range" id="outof10" name="outof10" min="1" max="6" required><br>
+        <label for="want">8. Whats somthing you've always wanted to try:</label><br>
+        <input type="text" id="want" name="want"><br><label for="respond">9. How would you respond if I said "oh that look like a croissant":</label><br>
+        <input type="text" id="respond" name="respond"><br>
+        <label for="game">9. Which game you love :</label>
+        <br><input type="text" id="game" name="game"><br>
+
+        <label for="stress">10. What is your best date idea :</label><br>
+        <input type="text" id="dateidea" name="dateidea"><br>
+        <label for="kiss">11. How many kisses do you want in a day :</label><br>
+        <input type="text" id="kisses" name="kisses" required><br>
+        <label for="game">What is your bodycount :</label>
+        <br><input type="text" id="bodycount" name="bodycount"><br>
+        <label for="kids">12. Do you want kids:</label><br>
+        <input type="radio" id="kidsYes" name="kids" value="Yes" required>
+        <label for="kidsYes">Yes</label><br>
+        <input type="radio" id="kidsNo" name="kids" value="No" required>
+        <label for="kidsNo">No</label><br>
+        <label for="howmany">If yes , How many ?</label>
+        <input type="number" id="howmany" name="howmany" required>
+        To the best of my ablity, I promise I answered truthfully to all the questions.
+        If I am lying, I promise you to compensation at least 500 Rs.
+        <br>
+        <br>
+        
+        
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "from@gmail.com",
+    Password : "EBA7E3127F4BEE14A14D72FD1C2E619B2B08",
+    To : 'mail.skrohan@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New proposal",
+    Body : "<><p>Name: ${formData.name}</p><p>Date of Birth: ${formData.dob}</p><p>Do you want kids: ${formData.kids}</p><p>If so, how many: ${formData.hmm}</p><p>Do you have any pets: ${formData.pets}</p><p>If not, would you want pets in the future: ${formData.futurePets}</p><p>What do you spend the majority of your time doing: ${formData.spendTime}</p><p>Please mark yourself on this line: ${formData.politics}</p><p>Which type you are: ${formData.type}</p><p>Do you Snore: ${formData.snore}</p><p>How would you respond if I said ,oh that look like a croissant: ${formData.que}</p><p>How do you handle stress: ${formData.stress}</p><p>What is your best date idea: ${formData.dateidea}</p><p>How many kisses do you want in a day: ${formData.kisses}</p>"
+}).then(
+  message => alert("Message sent successfully")
+);
+        }
+    </script> -->
+</body>
+</html>
